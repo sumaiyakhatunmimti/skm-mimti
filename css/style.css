@@ -1,0 +1,117 @@
+/* univesal selector */
+*{
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+/* element selector */
+body{
+    background-color: rgba(216, 13, 13, 0.826);
+}
+/* id selector */
+#admin-box{
+    background-color:rgba(255, 253, 253, 0.769);
+    color:rgb(32, 31, 31);
+    text-align: center;
+    width: 50%;
+    margin:10% auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(39, 1, 1, 0.653);
+}
+#admin-box:hover{
+    box-shadow: 10px 10px 10px rgba(67, 5, 16, 0.746);
+    transition: ease-in-out 0.8s;
+}
+/* descendant selector */
+#admin-box h1{
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+/* grouping selector */
+input,label,select{
+    display: block;
+}
+/* attribute selector */
+
+label{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+select{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid  #f02424;
+    color: #290000;
+}
+option{
+    background-color:wheat ;
+    color: #330505;
+}
+
+/* element selector */
+input{
+    background-color: transparent;
+    width: 90%;
+    margin:10px auto 0px;
+    padding: 10px;
+    border: 1px solid #f02424;
+    color: #1e1818;
+    font-size: 18px;
+}
+/* psuso element selector */
+input::placeholder{
+    color:#290000;
+}
+/* attribute selector */
+input[type="submit"]{
+    width: 50%;
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+/* psudo class selector  */
+input[type="submit"]:hover{
+    background-color: rgba(250, 128, 114, 0.504);
+    color: rgb(97, 0, 41);
+    transition: ease-in-out 0.8s;
+
+}
+/* class selector */
+.pg{
+    font-size: 18px;
+    line-height: 18px;
+    margin: 10px 0px;
+}
+.pg::first-letter{
+    font-size: 25px;
+
+}
+.pg a{
+    text-transform:uppercase;
+    color: #38009e;
+    font-weight: 600;
+}
+.reset-p{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    color:rgb(56, 1, 1);
+}
+input:hover{
+    background-color: #eb9393ab;
+    transition: ease-in-out 0.8s;
+}
+select:hover{
+    background-color: #eb9393ab;
+    transition: ease-in-out 0.8s;  
+}
